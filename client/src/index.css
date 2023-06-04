@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  input[type="text"] {
+    @apply rounded-full focus:ring-4  focus:border-sky-800 focus:ring-sky-800/30 py-1.5 !important;
+  }
+
+  label:not(.file) {
+    @apply font-semibold mb-1 pl-2 !important;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+}
